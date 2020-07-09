@@ -27,18 +27,16 @@ if not os.path.isfile(in_file):
 
 if out_dir[-1] == '/':
     out_dir = out_dir[:-1]
-#elif out_dir[-1] == '.':
-    #out_dir = os.getcwd()
+elif out_dir[-1] == '.':
+    out_dir = os.getcwd()
 elif not os.path.isdir(out_dir):
     print("Diretório de saída não existente")
-
-print(in_file, out_dir)
 
 def saturnv(): 
     index = 0
     num = 0
     with open(in_file) as tsv_read:
-        csv_reader = csv.reader(tsv_read, delimiter='\t')        
+        csv_reader = csv.reader(tsv_read, delimiter='\t')
         for row in csv_reader:
             if num == 0:
                 while index < len(row):
@@ -57,7 +55,7 @@ def saturnv():
                 index = 0
 
 def genapi():
-    index = 0
+    index = 0 
     num = 0
     with open(in_file) as tsv_read:
         csv_reader = csv.reader(tsv_read, delimiter='\t')        
