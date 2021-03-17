@@ -3,9 +3,9 @@ from collections import Counter
 import seaborn as sb
 import pandas as pd
 import matplotlib.pyplot as plt
-import csv, os
+import csv, os, sys
 
-directory_in = "/home/gs/Documents/projetos/is_finder/arquivos/"
+directory_in = sys.argv[1]
 directory = os.fsencode(directory_in)
 
 def main():
