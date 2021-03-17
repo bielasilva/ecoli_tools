@@ -1,12 +1,13 @@
-# IS Finder Heatmap Creator
+# Gerador de _heatmap_ do IS Finder
 
-Este *script* utiliza arquivos de resultado do IS Finder em formato CSV e gera um *heatmap*.
+Este _script_ utiliza arquivos de resultado do IS Finder em formato CSV e gera um _heatmap_.
 
-## Requerimentos
+## Pré-requisitos
 - Seaborn
 - Pandas
 - Matplotlib
 
 ## Como usar
 ```bash
-$ isfinder_heatmap.py diretório_com_arquivos
+$ isfinder_heatmap.py diretório_com_arquivos_CSV
+```
